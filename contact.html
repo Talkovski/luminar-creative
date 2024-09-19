@@ -54,14 +54,15 @@
             <h4 class="header">Contact Us</h4>
             <p>Have a question? Leave your Information below and we wil get back to you as soon as possible.</p>
         </div>
-
-        <div class="data">
-            <input type="text" class="data-item" placeholder="First Name">
-            <input type="text" class="data-item" placeholder="Last Name">
-            <input type="email" class="data-item" placeholder="E-ail">
-            <textarea id="message" name="message" placeholder="Message"></textarea>
-            <button type="submit" class="button" class="data-item">Send Message</button>
-        </div>
+        <form name="contact" netlify>
+            <div class="data">
+                <input required type="text" name="first-name" class="data-item" placeholder="First Name">
+                <input required type="text" name="last-name" class="data-item" placeholder="Last Name">
+                <input required type="email" name="email" class="data-item" placeholder="E-ail">
+                <textarea required id="message" name="message" name="message" placeholder="Message"></textarea>
+                <button type="submit" class="button" class="data-item">Send Message</button>
+            </div>
+        </form>
 
 
     </section>
